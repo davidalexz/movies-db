@@ -1,0 +1,376 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background: radial-gradient(
+		circle,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(9, 9, 121, 0.9836309523809523) 35%,
+		rgba(0, 212, 255, 1) 100%
+	);
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	margin: 5px;
+}
+
+.project-title {
+	position: absolute;
+	left: 5px;
+}
+
+.movie-list {
+	width: 80%;
+	margin: 5rem auto;
+	position: relative;
+}
+
+.movie-items img {
+	width: 300px;
+	transition: 250ms all;
+	margin: 10px;
+}
+
+.movie-items img:hover {
+	margin-left: 0 40px;
+	transform: scale(1.2);
+	cursor: pointer;
+	opacity: 0.3;
+}
+
+.movie-info {
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.movie-list:hover movie-info {
+	opacity: 1;
+}
+
+.movie-text {
+	background-color: #4caf50;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+}
+
+.movie-items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* Search styling */
+
+/* styling the button */
+
+.searchContainer {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
+	align-items: center;
+	max-width: 100%;
+	justify-content: center;
+	text-align: center;
+	margin: 2% 0;
+	min-height: 10px;
+	align-items: center;
+	right: 400px;
+}
+
+.searchForm {
+	width: 100%;
+}
+
+#search {
+	width: 100px;
+	font-family: sans-serif;
+	color: rgb(7, 7, 7);
+	border: none;
+	outline: 0;
+	min-height: 40px;
+	text-align: center;
+	padding: 0.375rem 0.3rem;
+	line-height: 1.5;
+	border-radius: 20px;
+}
+
+.filterButton {
+	font-size: 25px;
+}
+
+.filterButton:hover {
+	background-image: linear-gradient(to right, #1fa2ff 0%, #12d8fa 51%, rgb(13, 95, 153) 100%);
+}
+
+#inputValue {
+	width: 760px;
+	max-width: calc(100% - 30px);
+	font-size: 1rem;
+	font-weight: 400;
+	padding: 0.35rem 0.75rem;
+	line-height: 1.5;
+	border: 1px solid rgb(144, 208, 238);
+	border-radius: 50px;
+}
+
+/*Login */
+
+.container2 {
+	position: absolute;
+	top: 28%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 350px;
+	width: 100%;
+	padding: 10px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px 1px rgb(255, 244, 199);
+}
+
+.container2 h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #332902;
+}
+
+.container2 .input_field {
+	margin-bottom: 10px;
+}
+
+.container2 .input_field input[type="text"] {
+	width: 100%;
+	border: 1px solid #e0e0e0;
+	padding: 10px;
+}
+.container2 .input_field input[type="password"] {
+	width: 100%;
+	border: 1px solid #e0e0e0;
+	padding: 10px;
+}
+
+.container2 .btn input[type="button"] {
+	border: 0;
+	margin-top: 5px;
+	padding: 10px;
+	width: 100%;
+	background: #fece0c;
+	color: #332902;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: bold;
+	border-radius: 25px;
+	cursor: pointer;
+}
+.container2 #error_message1 {
+	margin-bottom: 20px;
+	padding: 10px;
+	background: #e0d3d3;
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.5s ease;
+}
+
+/* Register */
+
+.project-title {
+	position: absolute;
+	left: 5px;
+}
+
+.movie-list {
+	width: 80%;
+	margin: 6rem auto;
+}
+
+.form-container {
+	margin-top: 10rem;
+	height: 27rem;
+	max-width: 30rem;
+	width: 100%;
+	padding: 15px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px 1px rgb(255, 244, 199);
+	margin: 0 auto;
+}
+
+.form-container h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #332902;
+}
+
+.form-container .form-item {
+	margin-bottom: 10px;
+}
+
+.register-form {
+	width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 100%;
+	border: 1px solid #e0e0e0;
+	padding: 10px;
+}
+
+input[type="button"] {
+	width: 100%;
+	border: none;
+	border-radius: 1.5rem;
+	margin-top: 5px;
+	padding: 10px;
+	background: #fece0c;
+	color: #332902;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.form-container #user-message {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px;
+	background: #e0d3d3;
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.5s ease;
+}
+
+.existing-account h4 {
+	font-size: 15px;
+	margin-top: 1.5rem;
+	text-align: center;
+}
+
+.existing-account a {
+	padding: 5px;
+}
+
+.existing-account {
+	color: #212529;
+}
+
+.text-muted {
+	color: #fece0c !important;
+}
+
+/* Movie details */
+
+.MoviePage {
+	margin-top: 1rem;
+	display: flex;
+	padding: 5rem;
+	justify-content: center;
+	overflow: hidden;
+	min-height: 25rem;
+	flex-wrap: wrap;
+	margin: auto;
+	width: 55%;
+	padding: 1rem;
+	background: rgb(2, 0, 36);
+	background: radial-gradient(
+		circle,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(9, 9, 121, 0.9836309523809523) 35%,
+		rgba(0, 212, 255, 1) 100%
+	);
+}
+
+.flex-directions {
+	flex-direction: row;
+}
+
+.MoviePicture {
+	display: inline-block;
+	width: 25rem;
+	height: 35rem;
+
+	display: flex;
+	align-items: center;
+}
+
+.MovieDetails {
+	overflow: hidden;
+	justify-content: space-between;
+	width: 25rem;
+	min-height: 20rem;
+	height: 35rem;
+	margin: 1rem;
+	color: white;
+}
+
+@media screen and (max-width: 400px) {
+	.flex-direction {
+		flex-direction: column;
+	}
+}
+
+#MovieTitle {
+	font-size: 2.5rem;
+	font-weight: bold;
+	padding-bottom: 0.5rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	display: flex;
+	display: inline;
+}
+
+p {
+	font-size: 1.5rem;
+	display: flex;
+	display: inline;
+}
+
+#MovieYear,
+#MovieGenre,
+#MovieLanguage,
+#MovieRuntime,
+#MovieCountry {
+	font-size: 1.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.MovieResponsiveImg {
+	/*  width: 22rem;
+    height: 33rem; */
+
+	width: 100%;
+	max-width: 22rem;
+	height: auto;
+	margin-left: auto;
+}
+
+.movieBtn {
+	font-size: medium;
+	font-weight: bold;
+	color: white;
+	background-color: rgb(26, 25, 25);
+	border: none;
+	height: 3rem;
+	margin: 1rem;
+	text-align: center;
+	padding: 0 0.5rem;
+}

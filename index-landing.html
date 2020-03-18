@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style-landing.css" />
+		<title>Movies Database</title>
+	</head>
+	<body>
+		<header>
+			<div class="project-title">
+				<h3>
+					Movies Database
+					<i class="fas fa-video"></i>
+				</h3>
+			</div>
+
+			<div class="nav-buttons">
+				<a
+					href="#"
+					id="home"
+					class="btn btn-outline-dark"
+					role="button"
+					onClick="window.location.reload();"
+					>Home</a
+				>
+				<a href="/login/login.html" class="btn btn-outline-dark" role="button">Login</a>
+				<a href="/register/register.html" class="btn btn-outline-dark" role="button">Register</a>
+			</div>
+		</header>
+
+		<div class="searchContainer">
+			<form class="searchForm">
+				<div class="form-group">
+					<input type="text" id="inputValue" />
+				</div>
+
+				<button type="submit" class="filterButton" id="search">Filter</button>
+			</form>
+		</div>
+
+		<section class="movie-list"></section>
+
+		<script src="script-landing.js" defer></script>
+		<script src="/movie-details/Detailsscript.js"></script>
+	</body>
+</html>

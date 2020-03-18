@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+    />
+    <link href="style-landing.css" rel="stylesheet" type="text/css" />
+    <title>Movie Details</title>
+   <!--  "https://m.media-amazon.com/images/M/MV5BMzIxMDkxNDM2M15BMl5BanBnXkFtZTcwMDA5ODY1OQ@@._V1_SX300.jpg" -->
+</head>
+<body>
+
+    <header>
+        <div class="project-title">
+            <h3>
+                Movies Database
+                <i class="fas fa-video"></i>
+            </h3>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="#" id="home" class="btn btn-outline-dark" role="button">Home</a>
+            <a href="#" class="btn btn-outline-dark" role="button">Login</a>
+            <a href="#" class="btn btn-outline-dark" role="button">Register</a>
+        </div>
+    </header>
+
+    <div class="MoviePage flex-directions">
+        <div class="MoviePicture">
+            <img src="#" id="MoviePoster" class="MovieResponsiveImg" alt="Movie" >
+        </div>
+        <div class="MovieDetails">
+            <div id="MovieTitle"><h2>Title:  </h2></div>
+            <div id="MovieYear"> <p>Year:    </p> </div>
+            <div id="MovieGenre"> <p>Genre:  </p>  </div>
+            <div id="MovieLanguage"><p>Language:</p> </div>            
+            <div id="MovieCountry"><p>Country: </p> </div>
+           <div id="MovieRuntime" > <p>Runtime: </p>  </div>
+        </div>
+        <div>
+            <button type="button" class="movieBtn" id="AddMovieButton" onclick="AddMovie()">ADD MOVIE</button>
+            <button type="button" class="movieBtn" id="EditMovieButton" onclick="EditMovie()">EDIT MOVIE</button>
+            <button type="button" class="movieBtn" id="DeleteMovieButton" onclick="DeleteMovie()">DELETE MOVIE</button>
+        </div>
+    </div>
+    <script src="script-landing.js" defer></script>
+    <script src="Detailsscript.js"></script>
+</body>
+</html>
